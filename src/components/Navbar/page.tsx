@@ -55,7 +55,7 @@ const Navbar = () => {
             </button>
             <nav
               className={`${
-                isOpen ? " " : " "
+                isOpen ? " " : "hidden "
               } absolute py-5  bg-white right-4 max-w-[250px] shadow-lg w-full top-full rounded-lg lg:bg-transparent lg:max-w-full lg:static lg:shadow-none  lg:rounded-none `}
             >
               <ul className="block lg:flex ">
