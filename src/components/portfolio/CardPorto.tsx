@@ -10,7 +10,7 @@ const CardPorto = () => {
           <div className="card card-compact bg-base-100 shadow-xl  max-w-xs w-full lg:card-side lg:col-span-2 lg:max-w-[100%] ">
             <figure>
               <Image
-                src="/images/yida.jpg"
+                src="/images/yida.png"
                 alt="Movie"
                 width={250}
                 height={250}
