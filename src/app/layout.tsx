@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/LandingPage/section/Navbar";
+import Footer from "@/components/LandingPage/section/Footer";
+import { GlobalProvider } from "@/components/contexts/GlobalProvider";
 
 export const metadata: Metadata = {
   title: "Fathul | Protfolio",
@@ -14,7 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <GlobalProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </GlobalProvider>
+      </body>
     </html>
   );
 }
