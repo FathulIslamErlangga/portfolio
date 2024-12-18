@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-export const stateToggle = () => {
+export const StateToggle = () => {
   const [isToggle, setToggle] = useState<boolean>(false);
 
   const handleToggle = () => setToggle((prev) => !prev);

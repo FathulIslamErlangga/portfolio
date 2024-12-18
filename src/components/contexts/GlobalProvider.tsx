@@ -1,6 +1,6 @@
 "use client";
 import { createContext, useContext } from "react";
-import { stateToggle } from "./useState/stateToggle";
+import { StateToggle } from "./useState/stateToggle";
 
 interface GlobalStateProviderProps {
   isToggle: boolean;
@@ -11,7 +11,7 @@ const GlobalStateContext = createContext<GlobalStateProviderProps | undefined>(
   undefined
 );
 export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
-  const { isToggle, handleToggle } = stateToggle();
+  const { isToggle, handleToggle } = StateToggle();
   return (
     <GlobalStateContext.Provider value={{ isToggle, handleToggle }}>
       {children}
